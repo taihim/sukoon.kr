@@ -1,4 +1,4 @@
-//@ts-nocheck
+//@ts-expect-error
 'use client'
 
 import { useState, useRef, useEffect } from 'react';
