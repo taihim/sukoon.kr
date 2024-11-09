@@ -35,7 +35,7 @@ const MusicPlayer = () => {
     const tracks = [
         {
             title: "Track 1",
-            src: "/track1.mp3"
+            src: "/public/music/lucid-dreaming.mp3"
         },
         {
             title: "Track 2",
@@ -60,23 +60,19 @@ const MusicPlayer = () => {
         audio.addEventListener('loadedmetadata', handleLoadedMetadata);
         audio.addEventListener('timeupdate', handleTimeUpdate);
 
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes wave {
+            0%, 100% { height: 8px; }
+            50% { height: 24px; }
+            }
+        `;
+        document.head.appendChild(style);
         return () => {
             audio.removeEventListener('loadedmetadata', handleLoadedMetadata);
             audio.removeEventListener('timeupdate', handleTimeUpdate);
+            document.head.removeChild(style);
         };
-    }, []);
-
-    useEffect(() => {
-        // Add the wave animation keyframes dynamically
-        const style = document.createElement('style');
-        style.textContent = `
-      @keyframes wave {
-        0%, 100% { height: 8px; }
-        50% { height: 24px; }
-      }
-    `;
-        document.head.appendChild(style);
-        return () => document.head.removeChild(style);
     }, []);
 
     const togglePlay = () => {

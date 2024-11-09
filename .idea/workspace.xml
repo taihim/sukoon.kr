@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55257b2f-33f9-47c6-a4cd-3ca084aa89d6" name="Changes" comment="" />
+    <list default="true" id="55257b2f-33f9-47c6-a4cd-3ca084aa89d6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lofi-dash/src/app/Page.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lofi-dash/src/app/ui/background.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lofi-dash/src/app/ui/waveform.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/src/app/ui/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/src/app/ui/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/src/app/ui/musicPlayer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/src/app/ui/musicPlayer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/tailwind.config.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,21 +33,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "taihim"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;taihim&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:taihim/sukoon.kr.git",
-    "accountId": "0ffc463a-f918-4ac7-8e68-08b97b72aa55"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:taihim/sukoon.kr.git&quot;,
+    &quot;accountId&quot;: &quot;0ffc463a-f918-4ac7-8e68-08b97b72aa55&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2oaEdcRnOA24jpYMRCV3HbB51ud" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -48,6 +61,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "kotlin-language-version-configured": "true",
@@ -56,11 +70,15 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.typescriptcompiler",
+    "ts.external.directory.path": "/home/taihim/IdeaProjects/sukoon.kr/lofi-dash/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lofi-dash/src/app" />
+      <recent name="$PROJECT_DIR$/lofi-dash/public/music" />
       <recent name="$PROJECT_DIR$/lofi-dash/src/app/ui" />
       <recent name="$PROJECT_DIR$/lofi-dash/src" />
     </key>
@@ -81,7 +99,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731099374997</updated>
-      <workItem from="1731099376088" duration="7287000" />
+      <workItem from="1731099376088" duration="7941000" />
+      <workItem from="1731175829069" duration="9338000" />
     </task>
     <servers />
   </component>
@@ -90,5 +109,9 @@
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
