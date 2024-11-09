@@ -1,4 +1,4 @@
-// @ts-expect-error
+// @ts-expect-error will add type later
 function WaveformVisualizer({isPlaying}) {
     const bars = 4; // Number of bars in the visualizer
 
