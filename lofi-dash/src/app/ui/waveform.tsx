@@ -1,5 +1,10 @@
-// @ts-expect-error will add type later
-function WaveformVisualizer({isPlaying}) {
+import React from "react";
+
+interface WaveformVisualizerProps {
+    isPlaying: boolean;
+}
+
+const WaveformVisualizer: React.FC<WaveformVisualizerProps> = ({ isPlaying }) => {
     const bars = 4; // Number of bars in the visualizer
 
     return (
