@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55257b2f-33f9-47c6-a4cd-3ca084aa89d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lofi-dash/src/app/ui/musicPlayer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofi-dash/src/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/src/app/ui/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofi-dash/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/src/app/ui/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofi-dash/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofi-dash/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofi-dash/src/app/ui/counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/src/app/ui/counter.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="55257b2f-33f9-47c6-a4cd-3ca084aa89d6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731099374997</updated>
-      <workItem from="1731099376088" duration="6938000" />
+      <workItem from="1731099376088" duration="7287000" />
     </task>
     <servers />
   </component>
