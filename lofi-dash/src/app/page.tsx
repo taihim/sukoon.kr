@@ -4,8 +4,8 @@ import WaveformVisualizer from "@/app/ui/waveform";
 export default function Home() {
     return (
       <div className={styles.bg}>
-          <div className={styles.vignette}>
-              <div className={styles.scanlines}>
+          <div className={styles.scanlines}>
+              <div className={styles.vignette}>
                   <h1 className="text-blue-500">yo</h1>
                   <a href={"counter"}>Lets go</a>
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/jfKfPfyJRdk?si=_IF96hbxKYcZzxTF"
