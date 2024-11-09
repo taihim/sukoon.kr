@@ -1,6 +1,5 @@
 import styles from './Page.module.css'
 import WaveformVisualizer from "@/app/ui/waveform";
-import { VT323 } from 'next/font/google'
 
 export default function Home() {
     return (

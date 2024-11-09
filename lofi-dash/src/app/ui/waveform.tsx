@@ -1,4 +1,4 @@
-// @ts-ignore
+// @ts-nocheck
 function WaveformVisualizer({isPlaying}) {
     const bars = 4; // Number of bars in the visualizer
 
