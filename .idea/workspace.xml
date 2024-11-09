@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55257b2f-33f9-47c6-a4cd-3ca084aa89d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lofi-dash/src/app/Page.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lofi-dash/src/app/ui/background.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lofi-dash/src/app/ui/waveform.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofi-dash/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofi-dash/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofi-dash/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofi-dash/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofi-dash/src/app/ui/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/src/app/ui/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofi-dash/src/app/ui/musicPlayer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/src/app/ui/musicPlayer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofi-dash/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/src/app/Page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/src/app/Page.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1731099374997</updated>
       <workItem from="1731099376088" duration="7941000" />
-      <workItem from="1731175829069" duration="9338000" />
+      <workItem from="1731175829069" duration="10114000" />
     </task>
     <servers />
   </component>
