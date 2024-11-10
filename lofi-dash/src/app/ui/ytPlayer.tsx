@@ -94,7 +94,7 @@ const YouTubeLivestreamPlayer: React.FC<YouTubeLivestreamPlayerProps> = ({ video
             </div>
             <div className="flex gap-4">
                 <WaveformVisualizer isPlaying={isPlaying}/>
-                <h1 className="text-white font-vt323 text-xl">YouTube Livestream with Audio Control</h1>
+                <h1 className="text-white font-vt323 text-xl">lofi hip hop radio 📚 beats to relax/study to</h1>
                 <div id="youtube-player" style={{display: 'none'}}></div>
             </div>
         </div>

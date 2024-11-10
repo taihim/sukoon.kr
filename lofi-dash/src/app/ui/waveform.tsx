@@ -13,7 +13,7 @@ const WaveformVisualizer: React.FC<WaveformVisualizerProps> = ({ isPlaying }) =>
                 <div
                     key={i}
                     className={`w-1 bg-white transition-all duration-200 ${
-                        isPlaying ? 'h-3' : 'h-0'
+                        isPlaying ? 'h-3' : 'h-1'
                     }`}
                     style={{
                         animationName: isPlaying ? 'wave' : 'none',
