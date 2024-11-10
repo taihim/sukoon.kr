@@ -1,5 +1,4 @@
 import styles from './Page.module.css'
-import WaveformVisualizer from "@/app/ui/waveform";
 import YouTubeLivestreamPlayer from "@/app/ui/ytPlayer";
 
 export default function Home() {
