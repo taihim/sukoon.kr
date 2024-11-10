@@ -12,7 +12,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    zIndex: -1;
+    z-index: -1;
 }
 
 .vignette {
@@ -33,24 +33,22 @@
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 1;
     background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-    background-size: 100% 3px, 3px 100%; /* Increase scanline height to 5px for a thicker effect */
-    background-position: 0 0, 0 0; /* Initial position for the background */
-    animation: moveScanlines 0.5s linear infinite; /* Shorten the duration to increase the speed */
+    background-size: 100% 3px, 3px 100%;
+    background-position: 0 0, 0 0;
+    animation: moveScanlines 0.5s linear infinite;
+    z-index: 1;
 }
 
-/* Define the animation */
 @keyframes moveScanlines {
     0% {
-        background-position: 0 0, 0 0; /* Initial position */
+        background-position: 0 0, 0 0;
     }
     100% {
-        background-position: 0 100%, 0 100%; /* Move the background vertically */
+        background-position: 0 100%, 0 100%;
     }
 }
 
 .playerContainer {
     width: 100%;
-
 }
