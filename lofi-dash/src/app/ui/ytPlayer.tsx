@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 import WaveformVisualizer from "@/app/ui/waveform";
 import Image from 'next/image'
 
-// Type definitions for the YouTube Player API
 declare global {
     interface Window {
         YT: any;
@@ -94,15 +93,11 @@ const YouTubeLivestreamPlayer: React.FC<YouTubeLivestreamPlayerProps> = ({ video
                 </div>
             </div>
             <div className="flex gap-4">
-
                 <WaveformVisualizer isPlaying={isPlaying}/>
                 <h1 className="text-white font-vt323 text-xl">YouTube Livestream with Audio Control</h1>
-
-
                 <div id="youtube-player" style={{display: 'none'}}></div>
             </div>
         </div>
-
     );
 };
 
