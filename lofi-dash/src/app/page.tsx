@@ -1,7 +1,18 @@
 import styles from './Page.module.css'
 import YouTubeLivestreamPlayer from "@/app/ui/ytPlayer";
 
+
+const STREAMS = [
+    { id: 'jfKfPfyJRdk', title: 'lofi hip hop radio 📚 beats to relax/study to' },
+    { id: '4xDzrJKXOOY', title: 'synthwave radio 🌊 - beats to chill/game to' },
+    // Add more streams as needed
+];
+
 export default function Home() {
+
+    // const [currentStreamIndex, setCurrentStreamIndex] = useState<number>(0);
+
+
     return (
       <div className={styles.bg}>
           <div className={styles.scanlines}>
