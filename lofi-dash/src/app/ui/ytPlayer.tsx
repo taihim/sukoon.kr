@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useState,  } from 'react';
+import React, { useEffect, useState } from 'react';
 import WaveformVisualizer from "@/app/ui/waveform";
 import VolumeSlider from './volumeSlider';
 import Image from 'next/image'
@@ -20,30 +20,33 @@ const YouTubeLivestreamPlayer: React.FC<YouTubeLivestreamPlayerProps> = ({ video
     const [isPlaying, setIsPlaying] = useState<boolean>(false);
     const [volume, setVolume] = useState<number>(80);
 
-    const onPlayerReady = React.useCallback(() => {
+    const onPlayerReady = () => {
         console.log('Player is ready');
-        if (player) {
-            player.setVolume(volume);
-        }
-    }, [player, volume]);
+        player.setVolume(volume);
+    };
 
     useEffect(() => {
-        window.YT.ready(() => {
-            const playerInstance = new window.YT.Player('youtube-player', {
-                videoId: videoId,
-                events: {
-                    onReady: onPlayerReady,
-                    onStateChange: onPlayerStateChange,
-                },
-                playerVars: {
-                    controls: 0,
-                    showinfo: 0,
-                    rel: 0,
-                    autohide: 1,
-                },
+        const script = document.createElement('script');
+        script.src = 'https://www.youtube.com/iframe_api';
+        script.onload = () => {
+            window.YT.ready(() => {
+                const playerInstance = new window.YT.Player('youtube-player', {
+                    videoId: videoId,
+                    events: {
+                        onReady: onPlayerReady,
+                        onStateChange: onPlayerStateChange,
+                    },
+                    playerVars: {
+                        controls: 0,
+                        showinfo: 0,
+                        rel: 0,
+                        autohide: 1,
+                    },
+                });
+                setPlayer(playerInstance);
             });
-            setPlayer(playerInstance);
-        });
+        };
+        document.body.appendChild(script);
     }, [videoId, onPlayerReady]);
 
     const onPlayerStateChange = (event: any) => {
