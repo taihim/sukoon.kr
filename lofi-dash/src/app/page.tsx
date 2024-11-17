@@ -1,5 +1,6 @@
 import styles from './Page.module.css'
 import YouTubeLivestreamPlayer from "@/app/ui/ytStreamPlayer/ytPlayer";
+import TodoList from "./ui/TodoList";
 
 export default function Home() {
     return (
@@ -10,6 +11,9 @@ export default function Home() {
         <div className={styles.staticOverlay}></div>
         <div className={`${styles.playerContainer} absolute top-0 left-4 flex box-border h-32 w-auto p-6 gap-4`}>
             <YouTubeLivestreamPlayer/>
+        </div>
+        <div className={`${styles.playerContainer}`}>
+            <TodoList/>
         </div>
     </div>
     )

@@ -1,6 +1,6 @@
 'use client'
 
-import { STREAMS } from '@/app/config/streams';
+import { STREAMS, type Stream } from '@/app/config/streams';
 import React, { useEffect, useState } from 'react';
 import WaveformVisualizer from "@/app/ui/waveform";
 import VolumeSlider from '../volumeSlider';
@@ -30,7 +30,12 @@ const YouTubeLivestreamPlayer: React.FC<YouTubeLivestreamPlayerProps> = ({
     const [isLoading, setIsLoading] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const currentStream = STREAMS[currentStreamIndex];
+    const customStreams: Stream[] = typeof window !== 'undefined' 
+    ? JSON.parse(localStorage.getItem('customStreams') || '[]')
+    : [];
+    const allStreams = [...STREAMS, ...customStreams];
+
+    const currentStream = allStreams[currentStreamIndex];
 
     const nextStream = () => {
         const nextIndex = (currentStreamIndex + 1) % STREAMS.length;

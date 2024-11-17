@@ -4,7 +4,6 @@ import Script from 'next/script'
 import { VT323 } from 'next/font/google'
 import "./ui/globals.css";
 
-
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
