@@ -5,7 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55257b2f-33f9-47c6-a4cd-3ca084aa89d6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lofi-dash/public/bgs.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lofi-dash/public/sounds.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lofi-dash/src/app/ui/volumeSlider.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/public/wps/apoc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/public/wps/cafe.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/public/wps/campfire.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/public/wps/casette.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/public/wps/chess.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/public/wps/cozy-home.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/public/wps/cozy.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/public/wps/crt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/public/wps/food.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/public/wps/night.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/public/wps/rain.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/public/wps/rain2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/public/wps/rain3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/public/wps/spongebob.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/public/wps/static.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/public/wps/train.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/public/wps/van.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/public/wps/wall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofi-dash/src/app/Page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/src/app/Page.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lofi-dash/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lofi-dash/src/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +113,8 @@
       <updated>1731099374997</updated>
       <workItem from="1731099376088" duration="7941000" />
       <workItem from="1731175829069" duration="12892000" />
-      <workItem from="1731271050437" duration="10055000" />
+      <workItem from="1731271050437" duration="10712000" />
+      <workItem from="1731573815058" duration="3010000" />
     </task>
     <servers />
   </component>
