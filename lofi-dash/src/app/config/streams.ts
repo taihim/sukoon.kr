@@ -1,7 +1,7 @@
 export interface Stream {
     id: string;
     title: string;
-    icon?: string;  // Optional icon for each stream
+    icon?: string;
 }
 
 export const STREAMS: Stream[] = [
@@ -16,8 +16,14 @@ export const STREAMS: Stream[] = [
         icon: './play.svg'
     },
     { 
-        id: '5qap5aO4i9A', 
-        title: 'lofi hip hop radio - beats to sleep/chill to',
+        id: 'HuFYqnbVbzY', 
+        title: 'jazz lofi radio 🎷 beats to chill/study to',
         icon: './pause.svg'
     },
+    { 
+        id: '-OekvEFm1lo', 
+        title: 'Gentle Rain 🌧️ sounds to sleep/study to [Indoor]',
+        icon: './pause.svg'
+    },
+
 ]; 

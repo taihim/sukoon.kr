@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Script from 'next/script'
 import { VT323 } from 'next/font/google'
 import "./ui/globals.css";
 
@@ -32,6 +33,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+                <Script
+                    src="https://www.youtube.com/iframe_api"
+                    strategy="beforeInteractive"
+                />
+            </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${vt323.variable} antialiased vignette`}
       >
