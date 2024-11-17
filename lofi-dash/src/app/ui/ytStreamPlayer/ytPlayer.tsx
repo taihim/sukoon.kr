@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 import WaveformVisualizer from "@/app/ui/waveform";
 import VolumeSlider from '../volumeSlider';
 import Image from 'next/image'
+import StreamModal from './streamModal';
 
 declare global {
     interface Window {
@@ -26,7 +27,8 @@ const YouTubeLivestreamPlayer: React.FC<YouTubeLivestreamPlayerProps> = ({
     const [player, setPlayer] = useState<any>(null);
     const [isPlaying, setIsPlaying] = useState<boolean>(false);
     const [volume, setVolume] = useState<number>(40);
-
+    const [isLoading, setIsLoading] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const currentStream = STREAMS[currentStreamIndex];
 
@@ -42,7 +44,6 @@ const YouTubeLivestreamPlayer: React.FC<YouTubeLivestreamPlayerProps> = ({
         setCurrentStreamIndex(prevIndex);
     };
 
-    // Initialize player
     useEffect(() => {
         if (!window.YT) return;
 
@@ -78,8 +79,15 @@ const YouTubeLivestreamPlayer: React.FC<YouTubeLivestreamPlayerProps> = ({
         }
     }, [currentStreamIndex]);
 
-    const onPlayerStateChange = (event: any) => {
-        setIsPlaying(event.data === window.YT.PlayerState.PLAYING);
+    const onPlayerStateChange = (event: YT.OnStateChangeEvent) => {
+        if (event.data === YT.PlayerState.PLAYING) {
+            setIsPlaying(true);
+            setIsLoading(false);
+        } else if (event.data === YT.PlayerState.PAUSED) {
+            setIsPlaying(false);
+        } else if (event.data === YT.PlayerState.BUFFERING) {
+            setIsLoading(true);
+        }
     };
 
     const togglePlayPause = () => {
@@ -100,13 +108,42 @@ const YouTubeLivestreamPlayer: React.FC<YouTubeLivestreamPlayerProps> = ({
         }
     };
 
+    const handleStreamSelect = (index: number) => {
+        setCurrentStreamIndex(index);
+    };
+
     return (
-        <div className="grid gap-y-2 select-none">
+        <div className="grid grid-cols-[auto,1fr] gap-x-4 select-none">
+            <div className="relative w-24 h-24 rounded overflow-hidden bg-black row-span-2 shadow-[0_0_15px_rgba(0,0,0,0.7)]">
+                <Image 
+                    src={`https://img.youtube.com/vi/${currentStream.id}/hqdefault.jpg`}
+                    alt={`${currentStream.title} thumbnail`}
+                    fill
+                    className="object-cover object-center scale-150"
+                    sizes="80px"
+                        />
+            </div>
             <div className="flex items-center gap-4">
                 <WaveformVisualizer isPlaying={isPlaying}/>
-                <h1 className="text-white font-vt323 text-xl">{currentStream.title}</h1>
+                {isLoading ? (
+                    <h1 className="text-white font-vt323 text-xl loading-dots animate-pulse">
+                    </h1>
+                ) : (
+                    <h1 
+                        className="text-white font-vt323 text-xl cursor-pointer hover:text-gray-300 transition-colors"
+                        onClick={() => setIsModalOpen(true)}
+                    >
+                        {currentStream.title}
+                    </h1>
+                )}
                 <div id="youtube-player" style={{display: 'none'}}></div>
             </div>
+            <StreamModal 
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                onSelectStream={handleStreamSelect}
+                currentStreamIndex={currentStreamIndex}
+            />
             <div className="flex items-center gap-3">
                 <div className="cursor-pointer" onClick={togglePlayPause}>
                     {isPlaying ? <Image src="./pause2.svg" width={20} height={20} alt="Pause button"/> :
