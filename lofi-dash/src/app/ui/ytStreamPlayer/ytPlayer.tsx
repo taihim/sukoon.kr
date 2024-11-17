@@ -1,6 +1,6 @@
 'use client'
 
-import { STREAMS, type Stream } from '@/app/config/streams';
+import { STREAMS } from '@/app/config/streams';
 import React, { useEffect, useState } from 'react';
 import WaveformVisualizer from "@/app/ui/waveform";
 import VolumeSlider from '../volumeSlider';
