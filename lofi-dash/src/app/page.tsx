@@ -1,7 +1,5 @@
 import styles from './Page.module.css'
 import YouTubeLivestreamPlayer from "@/app/ui/ytPlayer";
-import StickyNote from '@/app/ui/stickyNote';
-
 
 export default function Home() {
     return (
